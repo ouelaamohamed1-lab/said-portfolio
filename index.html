@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouelaa Mohamed Said | Portfolio</title>
+<link rel="stylesheet" href="learn.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="profile.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="glow"></div>
+<div id="progress"></div>
+
+<nav>
+  <a class="logo" href="#top">&lt;Said<span>/&gt;</span></a>
+  <div class="menu">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    <a href="https://github.com/ouelaamohamed1-lab" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+    <button id="theme" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="name reveal">
+    <p class="tag"><i class="fa-solid fa-microchip"></i> Electronics Student · Web Developer</p>
+    <h1>Hi, I'm <span class="grad">Said</span> 👋</h1>
+    <h2 class="typing"><span id="type"></span><i class="caret"></i></h2>
+    <p id="about-text">I'm Mohamed Said, an electronics student who loves building things that work, from responsive web apps to C programs and, soon, robots. I care about clean code, great user experience, and learning something new every week.</p>
+    <div class="links">
+      <a class="btn primary" href="#projects"><i class="fa-solid fa-rocket"></i> See my work</a>
+      <a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact me</a>
+    </div>
+  </div>
+  <div class="image reveal">
+    <div class="ring"></div>
+    <img src="IMG_2450.jpg" alt="Said profile picture">
+    <span class="chip c1">&lt;/&gt; Web</span><span class="chip c2">C</span><span class="chip c3">⚡ Electronics</span>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h2 class="title">About <span class="grad">me</span></h2>
+  <div class="about-grid">
+    <div class="terminal">
+      <div class="bar"><i></i><i></i><i></i><span>said@portfolio:~</span></div>
+      <pre id="term">$ whoami
+Ouelaa Mohamed Said
+
+$ cat focus.txt
+- Electronics (1st year)
+- Web development
+- C programming
+- Robotics &amp; embedded systems
+
+$ cat goals.txt
+Build smart machines, ship cool projects,
+and reach C1 English on the way.</pre>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-n="5">0</b><span>Web technologies</span></div>
+      <div class="stat"><b data-n="4">0</b><span>Projects built</span></div>
+      <div class="stat"><b data-n="3">0</b><span>Fields I explore</span></div>
+      <div class="stat"><b data-n="100" data-s="%">0</b><span>Curiosity</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2 class="title">My <span class="grad">Skills</span></h2>
+  <div class="tabs">
+    <button class="active" data-f="web">Web</button>
+    <button data-f="prog">Programming</button>
+    <button data-f="robo">Electronics &amp; Robotics</button>
+  </div>
+  <div class="skill-list">
+    <div class="sk" data-c="web"><div><span>HTML5</span><em>85%</em></div><i style="--w:85%"></i></div>
+    <div class="sk" data-c="web"><div><span>CSS3 &amp; Animations</span><em>80%</em></div><i style="--w:80%"></i></div>
+    <div class="sk" data-c="web"><div><span>JavaScript</span><em>70%</em></div><i style="--w:70%"></i></div>
+    <div class="sk" data-c="web"><div><span>React</span><em>55%</em></div><i style="--w:55%"></i></div>
+    <div class="sk" data-c="web"><div><span>Node.js</span><em>50%</em></div><i style="--w:50%"></i></div>
+    <div class="sk" data-c="prog"><div><span>C Language</span><em>75%</em></div><i style="--w:75%"></i></div>
+    <div class="sk" data-c="prog"><div><span>Problem Solving</span><em>70%</em></div><i style="--w:70%"></i></div>
+    <div class="sk" data-c="prog"><div><span>Git &amp; GitHub</span><em>60%</em></div><i style="--w:60%"></i></div>
+    <div class="sk" data-c="robo"><div><span>Circuit Fundamentals</span><em>60%</em></div><i style="--w:60%"></i></div>
+    <div class="sk" data-c="robo"><div><span>Arduino &amp; Microcontrollers</span><em>40%</em></div><i style="--w:40%"></i></div>
+    <div class="sk" data-c="robo"><div><span>Embedded C</span><em>40%</em></div><i style="--w:40%"></i></div>
+    <div class="sk" data-c="robo"><div><span>Robotics</span><em>35%</em></div><i style="--w:35%"></i></div>
+  </div>
+  <div id="pics">
+    <div class="cell" data-c="web"><img src="html-logo.webp" alt="HTML"><span>HTML</span></div>
+    <div class="cell" data-c="web"><img src="css-logo.webp" alt="CSS"><span>CSS</span></div>
+    <div class="cell" data-c="web"><img src="javascript-logo.webp" alt="JavaScript"><span>JavaScript</span></div>
+    <div class="cell" data-c="web"><img src="react-logo.webp" alt="React"><span>React</span></div>
+    <div class="cell" data-c="web"><img src="node-logo.webp" alt="Node.js"><span>Node.js</span></div>
+    <div class="cell hide" data-c="prog"><i class="devicon-c-plain colored"></i><span>C</span></div>
+    <div class="cell hide" data-c="prog"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+    <div class="cell hide" data-c="prog"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+    <div class="cell hide" data-c="prog"><i class="fa-solid fa-puzzle-piece"></i><span>Algorithms</span></div>
+    <div class="cell hide" data-c="robo"><i class="devicon-arduino-plain colored"></i><span>Arduino</span></div>
+    <div class="cell hide" data-c="robo"><i class="fa-solid fa-bolt"></i><span>Circuits</span></div>
+    <div class="cell hide" data-c="robo"><i class="fa-solid fa-microchip"></i><span>Embedded C</span></div>
+    <div class="cell hide" data-c="robo"><i class="fa-solid fa-robot"></i><span>Robotics</span></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2 class="title">Featured <span class="grad">Projects</span></h2>
+  <div class="cards">
+    <article class="card tilt"><i class="fa-solid fa-gamepad"></i><h3>Snake Game in C</h3><p>A classic Snake game written in C with a visual, playable loop and clean game logic.</p><div class="tags"><span>C</span><span>Game Logic</span></div></article>
+    <article class="card tilt"><i class="fa-solid fa-right-left"></i><h3>Unit Converter</h3><p>A web app that started as a temperature converter and grew into a full unit converter.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+    <article class="card tilt"><i class="fa-solid fa-book-open"></i><h3>C Workshop Notes</h3><p>A LinkedIn-carousel style PDF that teaches the C language so anyone can read it and start coding.</p><div class="tags"><span>C</span><span>Teaching</span></div></article>
+    <article class="card tilt"><i class="fa-solid fa-user-astronaut"></i><h3>This Portfolio</h3><p>Interactive, responsive, with a canvas background, animations and a dark/light theme.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+  </div>
+</section>
+
+<section id="journey" class="reveal">
+  <h2 class="title">My <span class="grad">Journey</span></h2>
+  <div class="timeline">
+    <div class="t"><b>Web foundations</b><p>HTML, CSS and JavaScript, then React and Node.js.</p></div>
+    <div class="t"><b>Learning C</b><p>Built Snake and wrote a workshop to teach the language.</p></div>
+    <div class="t"><b>Electronics degree</b><p>First year: circuits, physics and maths.</p></div>
+    <div class="t next"><b>Next: Robotics</b><p>Microcontrollers, sensors and my first robot.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2 class="title">Let's <span class="grad">connect</span></h2>
+  <p class="center">I'm open to new projects, ideas and collaborations. Let's build something great together.</p>
+  <div class="contact">
+    <a href="mailto:ouelaamohamed1@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+    <a href="https://github.com/ouelaamohamed1-lab" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+    <a href="https://www.linkedin.com/in/ouelaa-mohamed-9b0317425/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+    <a href="https://www.instagram.com/_scanner__/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="https://discord.com/users/1190392740169654283" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+  </div>
+</section>
+</main>
+<footer>© 2026 Ouelaa Mohamed Said · Built with ❤️ and too much coffee</footer>
+<button id="up" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="index.js"></script>
+</body>
+</html>
